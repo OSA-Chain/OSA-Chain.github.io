@@ -1,0 +1,668 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    /* font-size: 10px; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --main-heading--: 7.5rem;
+    --Paragraph-font-size--: 2rem;
+    --heading--: 4rem;
+    --Paragraph-font-size-box--: 1.5rem;
+    --Heading-box--: 2.3rem;
+
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    /* padding-bottom: 200px; */
+    /* overflow-x: hidden; */
+}
+
+/************************ NavBar Starts *********************/
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 80px;
+}
+
+header .navbar .nav-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar .nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    /* font-weight: 600; */
+}
+
+/************************ NavBar Ends *********************/
+
+/****************** HERO SECTION STARTS *******************/
+
+.hero-container {
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-family: "Syne", Sans-serif;
+    height: 80vh;
+}
+
+.hero-container::before {
+    content: 'BLOCKCHAIN';
+    position: absolute;
+    font-size: 250px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.045);
+}
+
+.hero-container .content {
+    transform: translateY(30%);
+}
+
+.hero-container .content h1 {
+    font-size: var(--main-heading--);
+    margin-bottom: 10px;
+}
+
+.hero-container .content p {
+    font-size: 20px;
+    margin-bottom: var(--Paragraph-font-size--);
+}
+
+.hero-container .content .buttons button {
+    margin-right: 10px;
+}
+
+.hero-container .content .buttons .hero-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: #13111A;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.hero-container .content .buttons .hero-btn:hover {
+    background: linear-gradient(225deg, #30FFC7 0%, #512FE7 100%);
+    transition: 0.5s;
+}
+
+.animated-items .left img {
+    position: absolute;
+    z-index: -1;
+    top: 52%;
+    left: 4%;
+    animation: left;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    width: 150px;
+}
+
+@keyframes left {
+    0% {
+        top: 52%;
+        left: 4%;
+    }
+
+    50% {
+        top: 40%;
+        left: 4%;
+    }
+}
+
+.animated-items .right img {
+    position: absolute;
+    right: 4%;
+    top: 62%;
+    z-index: -1;
+    animation: right;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    width: 150px;
+}
+
+@keyframes right {
+    0% {
+        top: 62%;
+        right: 4%;
+    }
+
+    50% {
+        top: 52%;
+        right: 4%;
+    }
+}
+
+/****************** HERO SECTION ENDS *******************/
+
+/***************** KEY FEATURES *********************/
+.keyfeatures {
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.keyfeatures .USP {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.keyfeatures .USP h1 {
+    font-size: var(--heading--);
+    font-weight: bolder;
+    width: 50%;
+}
+
+.keyfeatures .USP p {
+    width: 40%;
+    font-size: var(--Paragraph-font-size--);
+    color: grey;
+    line-height: 30px;
+}
+
+.key-containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.key-containers .key-container-box {
+    width: 32%;
+    background-color: #13111A;
+    text-align: left;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.key-containers .key-container-box>i {
+    font-size: 50px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.key-containers .key-container-box>h2 {
+    font-size: var(--Heading-box--);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.key-container-box>p {
+    font-size: var(--Paragraph-font-size-box--);
+}
+
+.key-containers .bgnone {
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.659);
+}
+
+.key-containers .key-container-box .bgcol {
+    background-color: #13111A;
+}
+
+/***************** KEY FEATURES *********************/
+
+/***************** DISCOVER *********************/
+.discover {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.discover .discover-content {
+    width: 50%;
+}
+
+.discover .discover-content h2 {
+    font-size: var(--heading--);
+    margin-bottom: 20px;
+}
+
+.discover .discover-content p {
+    font-size: var(--Paragraph-font-size--);
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: rgb(183, 183, 183);
+}
+
+/***************** DISCOVER *********************/
+
+/************ MODERN BUSINESS *****************/
+.modern-business-container {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.modern-business-container .modern-business-content {
+    width: 50%;
+}
+
+.modern-business-container .modern-business-content h2 {
+    font-size: var(--heading--);
+    margin-bottom: 20px;
+}
+
+.modern-business-container .modern-business-content p {
+    font-size: var(--Paragraph-font-size--);
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: rgb(183, 183, 183);
+}
+
+.toggle-content {
+    border-left: 1px solid rgba(128, 128, 128, 0.357);
+    padding: 0px;
+    padding: 0 30px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.toggle-content .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.toggle-content .toggle-container h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.toggle-content .toggle-container i {
+    cursor: pointer;
+    color: white;
+}
+
+/************ MODERN BUSINESS *****************/
+
+/* <!------------------------------ BLOCK CHAIN VIDEO  ---------------------------> */
+.blockchain {
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.blockchain .blockchain-title {
+    /* width: 60%;
+    margin: auto; */
+    margin-bottom: 20px;
+}
+
+.blockchain .blockchain-title h1 {
+    font-size: var(--heading--);
+}
+
+/* <!------------------------------ BLOCK CHAIN VIDEO  ---------------------------> */
+
+/* <!--------------------------Maximum Security ------------------------------------> */
+
+.maximum-security {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.maximum-security .maximum-security-content {
+    width: 50%;
+}
+
+.maximum-security .maximum-security-content h1 {
+    font-size: var(--heading--);
+    margin-bottom: 20px;
+}
+
+.maximum-security .maximum-security-content p {
+    font-size: var(--Paragraph-font-size--);
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: rgb(183, 183, 183);
+}
+
+/* <!--------------------------Maximum Security ------------------------------------> */
+.reviews {
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    position: relative;
+}
+
+.reviews .review-title h1 {
+    font-size: var(--heading--);
+    margin-bottom: 20px;
+}
+
+.reviews .all-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.reviews .all-reviews .testimonial {
+    width: 40%;
+}
+
+.reviews .all-reviews .testimonial i {
+    font-size: 30px;
+    color: lightgreen;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.reviews .all-reviews .testimonial p {
+    font-size: var(--Paragraph-font-size--);
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: rgb(183, 183, 183);
+}
+
+.reviews .all-reviews .testimonial h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.reviews .all-reviews .testimonial h3 {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.reviews button {
+    width: 200px;
+    margin-top: 40px;
+}
+
+.reviews .animated-items .left img {
+    position: absolute;
+    z-index: -1;
+    top: 80%;
+    left: 4%;
+    animation: left-sec;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    width: 100px;
+}
+
+@keyframes left-sec {
+    0% {
+        top: 80%;
+        left: 4%;
+    }
+
+    50% {
+        top: 70%;
+        left: 4%;
+    }
+}
+
+.reviews .animated-items .right img {
+    position: absolute;
+    right: 4%;
+    top: 10%;
+    z-index: -1;
+    animation: right-sec;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    width: 100px;
+}
+
+@keyframes right-sec {
+    0% {
+        top: 10%;
+        right: 4%;
+    }
+
+    50% {
+        top: 0%;
+        right: 4%;
+    }
+}
+
+/* <!--------------------------Maximum Security ------------------------------------> */
+
+/* <!--------------------------FAQ ------------------------------------> */
+.faq {
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.faq .faq-title {
+    width: 55%;
+}
+
+.faq .faq-title h1 {
+    font-size: var(--heading--);
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.faq .faq-title p {
+    font-size: var(--Paragraph-font-size--);
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: rgb(183, 183, 183);
+}
+
+.faq .faq-ques {
+    width: 40%;
+}
+
+.faq .faq-ques .faq-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* <!--------------------------FAQ ------------------------------------> */
+
+
+/* <!---------- NEWS LETTERS ---------------------------> */
+.newsletter {
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+    background-color: #13111A;
+    margin-top: 100px;
+    border-radius: 50px;
+}
+
+.newsletter h1 {
+    font-size: var(--heading--);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.newsletter .input input {
+    height: 50px;
+    width: 30%;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 4px solid #32038a;
+}
+
+/* <!---------- NEWS LETTERS ---------------------------> */
+
+footer {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    height: 300px;
+    column-gap: 20px;
+}
+
+footer .box {
+    /* border: 2px solid red; */
+    color: white;
+    padding: 50px 10px;
+}
+
+footer .box h2 {
+    color: rgb(183, 183, 183);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+footer .box ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .box ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline;
+    font-size: 2rem;
+}
+
+footer .box .social-media-links i {
+    background: grey;
+    color: white;
+    padding: 7px;
+    margin: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .obx .social-media-links i:hover {
+    background: linear-gradient(225deg, #30FFC7 0%, #512FE7 100%);
+}
+
+#about {
+    color: white;
+    padding: 50px 10px;
+}
+
+#about img {
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: rgb(183, 183, 183);
+}
+
+/****************************** UNIVERSAL CLASSES ********************************************/
+
+.defaultbtn {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(225deg, #30FFC7 0%, #512FE7 100%);
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/* .para{
+    display: none;
+} */
+
+/****************************** UNIVERSAL CLASSES ********************************************/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        height: 80px;
+    }
+
+    header .navbar .logo img {
+        width: 100px;
+    }
+
+    header .navbar .nav-menu ul {
+        display: none;
+        gap: 20px;
+    }
+
+    header .navbar .get-quote button {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...} */
+/* 
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...} */
+/* 
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...} */
