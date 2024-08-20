@@ -1,7 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <title>OSA-Chain Bridge</title>
 </head>
 <body>
+	<!----------------------------------- Overlay Starts -------------------------------------------->
+	<div id="overlay" class="overlay">
+		<div class="overlay-content">
+			<h1>Project Shutdown Notice</h1>
+			<p>Hey Everyone,<br><br>
+				We hope you're all doing well. We’ve got some tough news to share OSA-Bridge is shutting down. <br><br>
+				Despite putting in a lot of hard work and effort, we ran into some challenges that we just couldn’t overcome and after a lot of thought, we’ve decided that closing the project is the best way forward.<br>
+				As the code was acquired, all outstanding compensations have been paid out and the entire codebase has been moved to private. You may still use earlier versions of the code as you please under its 
+				original license.<br><br>
+				A Big Thanks<br><br>
+				We want to give a huge shoutout to everyone who supported us—your enthusiasm and contributions have meant a lot. We genuinely appreciate all the trust and support you’ve shown us.<br>
+				A special shoutout to all our freelancers and the amazing community who made this project possible in the first place.<br><br>
+				What’s Next<br><br>
+				All tokens associated have been successfully exchanged as per the project’s closure roadmap and any associated smart contracts and operational processes have been terminated.<br>
+				The protocol has been officially ended and been fully liquidated.<br><br>
+				If for whatever reason you have remaining issues after this closure, we’re here to help with the transition. For inquiries you can reach us as before at:<br><br>
+				<span style="font-size: 24px; font-weight: bold; color: #228B22;">OSA-Chain@proton.me</span><br><br>
+				A Look Ahead<br><br>
+				Despite the closure of the OSA-Chain Bridge protocol this project is a testament to the transformative power of decentralized finance. <br>
+				We were able to achieve our objectives without the traditional constraints of a formal employment structure.<br>
+				Multi-signature wallets, made trustless payments a reality and we believe this model represents the future of innovation, enabling wider access to community-driven projects.<br><br>
+				Final Thoughts<br><br>
+				We want to extend our deepest gratitude to all our community members, investors, and partners for your support and engagement throughout the life of the project.<br>
+				Your contributions and enthusiasm have been invaluable.<br><br>
+				Thanks for being part of the OSA-Bridge journey. We wish you all the best and hope to stay in touch.<br><br><br><br>
+				Cheers,<br><br>
+				your OSA-Chain Team</p>
+			<button id="close-overlay" class="defaultbtn">I need help!</button>
+		</div>
+	</div>
+	<!----------------------------------- Overlay ENDS -------------------------------------------->
+	<!----------------------------------- New Email Overlay Starts -------------------------------------------->
+	<div id="email-overlay" class="overlay" style="display: none;">
+		<div class="overlay-content">
+			<h1>Contact Us</h1>
+			<p>If you have any questions or need support, please contact us at:<br><br>
+			<strong>OSA-Chain@proton.me</strong></p>
+			<button id="close-email-overlay" class="defaultbtn">Close</button>
+		</div>
+	</div>
+<!----------------------------------- New Email Overlay ENDS -------------------------------------------->
+
+
     <!----------------------------------- Navbar Starts -------------------------------------------->
     <header>
         <nav class="navbar">
@@ -51,7 +99,7 @@
         <div class="keyfeatures">
             <div class="USP">
                 <h1>Key Features that make blockchain more attractive</h1>
-                <p>Blockchain is an especially promising and revolutionary a technology because it helps reduce security
+                <p>Blockchain is an especially promising and revolutionary technology because it helps reduce security
                     risks, stamp out fraud and bring transparency in a scalable way.</p>
             </div>
             <div class="key-containers">
@@ -65,7 +113,7 @@
                 <div class="key-container-box bgnone">
                     <i class="fas fa-chart-line bgcol"></i>
                     <h2>Better Security</h2>
-                    <p>Blockchain technology is considered more secure than its contemporaries because of lack of a
+                    <p>Blockchain technology is considered more secure than its contemporaries because of the lack of a
                         single point.</p>
                 </div>
                 <div class="key-container-box">
@@ -77,7 +125,7 @@
                 <div class="key-container-box bgnone">
                     <i class="fas fa-chart-line bgcol"></i>
                     <h2>Faster Settlement</h2>
-                    <p>Traditional banking systems are very a unbelievably slow, probably because of they require a
+                    <p>Traditional banking systems are very unbelievably slow, probably because of they require a
                         settlement time.</p>
                 </div>
                 <div class="key-container-box">
@@ -138,7 +186,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!---------------------------- Modern Business ---------------------------->
@@ -155,7 +202,6 @@
     <!--------------------------Maximum Security ------------------------------------>
     <div class="maximum-security">
         <div class="image">
-            <img src="IMG/blockchain-icon09.svg" alt="Blockchain">
         </div>
         <div class="maximum-security-content">
             <h1> Ensure maximum security of your digital assets forever</h1>
@@ -171,7 +217,7 @@
     <section>
         <div class="reviews">
             <div class="review-title">
-                <h1>Globally recognized and trusted <Br> blockchain technology</h1>
+                <h1>Globally recognized and trusted <br> blockchain technology</h1>
             </div>
             <div class="all-reviews">
                 <div class="testimonial">
@@ -179,12 +225,10 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <p>“OSA Blockchain is my first choice because their work team is respectable people and on the
-                        other hand it has always been trusted and safe for my funds.</p>
-                    <p>And two days ago I needed help from the support team aware in some of the things related to the
-                        blockchain.”</p>
-                    <h2>Karen Lynn</h2>
-                    <h3>Founder @ Company</h3>
+					<h3>Keyla Linn</h3>
+                    <p>“OSA Blockchain is my first choice because their work team is respectable and it has always been up and running."</p>
+					<h3>Martin Sonnerberger</h3>
+                    <p>"When I needed help from the support team, they actually replied.”</p>
                 </div>
             </div>
             <button class="defaultbtn">View All Reviews</button>
@@ -227,7 +271,7 @@
     <!---------- NEWS LETTERS --------------------------->
     <section>
         <div class="newsletter">
-            <h1>Join our community of faith centered blockchain enthusiasts</h1>
+            <h1>Join our community of faith-centered blockchain enthusiasts</h1>
             <form action="">
                 <div class="input">
                     <input type="email" placeholder="Type your email here" required>
@@ -279,3 +323,50 @@
         </div>
     </footer>
     <!----------------FOOTER -------------------------->
+
+	<script>
+		// Flag to track whether the original overlay has been closed
+		let isOverlayClosed = false;
+
+		// Function to show the original overlay
+		function showOverlay() {
+			if (!isOverlayClosed) {
+				document.getElementById('overlay').style.display = 'flex';
+			}
+		}
+
+		// Function to hide the original overlay and show the email overlay
+		function closeOverlay() {
+			document.getElementById('overlay').style.display = 'none';
+			document.getElementById('email-overlay').style.display = 'flex'; // Show the email overlay
+			isOverlayClosed = true; // Set flag to true when original overlay is closed
+		}
+
+		// Function to hide the email overlay and show the original overlay
+		function closeEmailOverlay() {
+			document.getElementById('email-overlay').style.display = 'none';
+			document.getElementById('overlay').style.display = 'flex'; // Show the original overlay again
+		}
+
+		// Show the original overlay when the page loads
+		window.onload = function() {
+			showOverlay();
+		};
+
+		// Attach event listener to the close button of the original overlay
+		document.getElementById('close-overlay').addEventListener('click', closeOverlay);
+
+		// Attach event listener to the close button of the email overlay
+		document.getElementById('close-email-overlay').addEventListener('click', closeEmailOverlay);
+
+		// Add click event listener to all buttons to show the original overlay, except the close button
+		document.querySelectorAll('button').forEach(button => {
+			if (button.id !== 'close-overlay' && button.id !== 'close-email-overlay') {
+				button.addEventListener('click', showOverlay);
+			}
+		});
+	</script>
+
+
+</body>
+</html>
